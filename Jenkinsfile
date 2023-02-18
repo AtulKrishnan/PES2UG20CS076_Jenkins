@@ -4,13 +4,13 @@ pipeline  {
     stage('Build'){
       steps {
         sh 'g++ hello.cpp -o hello_exec'
-        echo 'Build Stage Successful'
+        echo 'Build Stage is Successful'
       }
     }
     stage('Test'){
       steps {
         sh './hello_exec'
-        echo 'Test Stage Successful'
+        echo 'Test Stage is Successful'
       }
     }
     stage('Deploy'){
